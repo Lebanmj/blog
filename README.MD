@@ -1,6 +1,8 @@
 TO RUN THE PROJECT JUST RUN THE COMMAND 
 
 npm run server 
+
+
 Below is the mongodb connection link
 
   mongodb+srv://leban:leban@cluster0.jjsw54e.mongodb.net/blogapp
