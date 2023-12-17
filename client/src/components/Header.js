@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Box,AppBar,Toolbar,Button, Typography, Tabs, Tab} from '@mui/material'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import { authActions } from '../redux/store'
 
@@ -35,6 +35,7 @@ const Header = () => {
              <Tabs textColor='inherit' value={value} onChange={(e,val)=>setValue(val)}>
              <Tab label ='Blogs' LinkComponent={Link} to='/blogs'/>
              <Tab label ='My Blogs' LinkComponent={Link} to='/my-blogs'/>
+             <Tab label ='Create Blogs' LinkComponent={Link} to='/create-blog'/>
              </Tabs>
 
          </Box>
