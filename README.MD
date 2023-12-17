@@ -1,6 +1,7 @@
 TO RUN THE PROJECT JUST RUN THE COMMAND 
 
-npm run server 
+npm run dev 
+(above command will enable both front -end and backend to run with help of concurrently )
 
 
 Below is the mongodb connection link
