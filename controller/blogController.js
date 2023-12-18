@@ -6,7 +6,7 @@ const userModel = require('../models/userModels')
 // get all controller
 exports.getAllBlogsController = async (req,res) => {
     try{
-        const blogs = await blogModel.find({}).populate("user")
+        const blogs = await blogModel.findByIdAndDelete(req.params.id).find({}).populate("user")
         if(!blogs){
             return res.status(200).send({
                 success:false,
